@@ -1,0 +1,19 @@
+### WebStorm/IntelliJ ###
+/.idea
+
+# Dependency directories
+/node_modules
+
+# Build generated
+/backup
+/dist
+/dist4
+/dist5
+/dist6
+/archives
+/sourcefiles
+/releasefiles
+/package
+/oldupdate.xml
+/.DS_Store
+/.claude

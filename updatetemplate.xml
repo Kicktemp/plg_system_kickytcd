@@ -1,0 +1,25 @@
+<update>
+  <name>System - Kick YOOtheme Plugin Demo</name>
+  <description>Demo Plugin for the YOOtheme Community Day – Beyond Child Themes</description>
+  <element>kickyootcd</element>
+  <type>plugin</type>
+  <folder>system</folder>
+  <client>site</client>
+  <section>updates</section>
+  <version>[VERSION]</version>
+  <changelogurl>https://raw.githubusercontent.com/[OWNER]/[REPO]/[BRANCH]/changelog.xml</changelogurl>
+  <infourl title="KickKwadrat Plugin">https://github.com/[OWNER]/[REPO]</infourl>
+  <downloads>
+    <downloadurl type="full" format="zip"><![CDATA[https://github.com/[OWNER]/[REPO]/releases/download/v[VERSION]/[REPO]_[VERSION].zip]]></downloadurl>
+  </downloads>
+  <sha256>[SHA256]</sha256>
+  <sha384>[SHA384]</sha384>
+  <sha512>[SHA512]</sha512>
+  <tags>
+    <tag>[STABILITY]</tag>
+  </tags>
+  <maintainer>Kicktemp GmbH</maintainer>
+  <maintainerurl>https://kicktemp.com</maintainerurl>
+  <php_minimum>8.1</php_minimum>
+  <targetplatform name="joomla" version="5\.(0|1|2|3|4)|6\.(0|1|2|3|4)"/>
+</update>

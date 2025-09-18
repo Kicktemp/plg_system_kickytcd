@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="[PLUGINTYPE]" method="upgrade">
+	<!--<dlid prefix="key=" />-->
+	<name>[PACKAGE_NAME_UPPER]</name>
+	<author>[AUTHOR]</author>
+	<creationDate>[DATE]</creationDate>
+	<copyright>[COPYRIGHT]</copyright>
+	<license>[LICENSE]</license>
+	<authorEmail>[AUTHOR_EMAIL]</authorEmail>
+	<authorUrl>[AUTHOR_URL]</authorUrl>
+	<version>[VERSION]</version>
+	<changelogurl>https://raw.githubusercontent.com/[OWNER]/[REPO]/[BRANCH]/changelog.xml</changelogurl>
+	<description>[PACKAGE_NAME_UPPER]_XML_DESCRIPTION</description>
+	<namespace path="src">[NAMESPACE]</namespace>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<folder plugin="[PRODUCT_NAME_LOWER]">services</folder>
+		<folder>language</folder>
+		<folder>src</folder>
+	</files>
+	<config>
+		<fields
+				name="params"
+				addfieldprefix="[NAMESPACE]\Field">
+			<fieldset name="basic">
+				<field
+						name="example"
+						type="radio"
+						label="[PACKAGE_NAME_UPPER]_EXAMPLE_LABEL"
+						description="[PACKAGE_NAME_UPPER]_EXAMPLE_DESC"
+						class="btn-group btn-group-yesno"
+						default="1"
+						filter="integer"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+			<fieldset name="support" label="[PACKAGE_NAME_UPPER]_TAB_SUPPORT">
+				<field name="supportnote"
+					   type="note"
+					   class="alert alert-info"
+					   label="[PACKAGE_NAME_UPPER]_SPACER_SUPPORT_LABEL"
+					   description="[PACKAGE_NAME_UPPER]_SPACER_SUPPORT_DESC"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="[PROJECT_NAME]">
+			https://raw.githubusercontent.com/[OWNER]/[REPO]/[BRANCH]/update.xml
+		</server>
+	</updateservers>
+</extension>

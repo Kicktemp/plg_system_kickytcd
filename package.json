@@ -1,0 +1,82 @@
+{
+  "name": "plg_system_kickytcd",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "boilerplate": "cross-env KICK_CONFIG=boilerplate node ./scripts/tasks/copy.js",
+    "copy": "cross-env KICK_CONFIG=copy node ./scripts/tasks/copy.js",
+    "copyrelease": "cross-env KICK_CONFIG=release node ./scripts/tasks/copy.js",
+    "copypackage": "cross-env KICK_CONFIG=package node ./scripts/tasks/copy.js",
+    "watch": "node ./scripts/tasks/watch.js",
+    "cleaner": "node ./scripts/tasks/clean.js",
+    "archives": "cross-env node ./scripts/tasks/archives.js",
+    "buildintern": "npm run cleaner && npm run copyrelease && npm run copypackage && npm run archives",
+    "release": "npm run cleaner && npm run copyrelease && npm run copypackage && npm run archives && npm run updateXML",
+    "updateXML": "node ./scripts/tasks/xml.js",
+    "download:joomla5": "sh ./scripts/joomla5.sh",
+    "download:joomla6": "sh ./scripts/joomla6.sh",
+    "publishtag": "sh ./scripts/post.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kicktemp/plg_system_kickytcd.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Kicktemp GmbH",
+    "email": "hello@kicktemp.com",
+    "url": "https://kicktemp.com"
+  },
+  "contributors": [
+    {
+      "name": "Niels Nübel",
+      "email": "niels@kicktemp.com"
+    },
+    {
+      "name": "Stefan Wendhausen",
+      "email": "stefan@kicktemp.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kicktemp/plg_system_kickytcd/issues"
+  },
+  "homepage": "https://github.com/Kicktemp/plg_system_kickytcd#readme",
+  "buildconfigs": {
+    "proxy": "http://ytc2025.kick5.test"
+  },
+  "placeholder": {
+    "[UPDATEURL]": "https://kicktemp.shop/download?e=[PACKAGE_NAME]&v=[VERSION]",
+    "[PACKAGE_NAME]": "plg_system_kickytcd",
+    "[NAMESPACE]": "Kicktemp\\Plugin\\System\\KickYtcd",
+    "[PACKAGE_NAME_UPPER]": "PLG_SYSTEM_KICKYTCD",
+    "[PROJECT_NAME]": "System - Kick YOOtheme Plugin Demo",
+    "[PRODUCT_NAME]": "KickYtcd",
+    "[PRODUCT_NAME_LOWER]": "kickytcd",
+    "[OWNER]": "Kicktemp",
+    "[REPO]": "plg_system_kickytcd",
+    "[BRANCH]": "main",
+    "[AUTHOR]": "Kicktemp GmbH",
+    "[AUTHOR_EMAIL]": "hello@kicktemp.com",
+    "[COPYRIGHT]": "Copyright © 2025 Kicktemp GmbH. All rights reserved.",
+    "[LICENSE]": "GNU General Public License version 2 or later; see LICENSE.txt",
+    "[AUTHOR_URL]": "https://kicktemp.com",
+    "[PRODUCT_LINK_DE]": "https://kicktemp.com",
+    "[PRODUCT_LINK_EN]": "https://kicktemp.com",
+    "[DATE]": "18.09.2025",
+    "[PLUGINTYPE]": "system",
+    "[STABILITY]": "stable"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "archiver": "^5.3.1",
+    "chokidar": "^3.5.3",
+    "cross-env": "^7.0.3",
+    "fs-extra": "^11.1.0",
+    "glob": "^8.1.0",
+    "fast-xml-parser": "^5.2.5"
+  }
+}
