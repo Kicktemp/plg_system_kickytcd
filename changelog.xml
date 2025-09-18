@@ -2,9 +2,52 @@
     <changelog>
         <element>kickytcd</element>
         <type>plugin</type>
-        <version>1.0.0</version>
+        <version>0.0.1</version>
+        <change>
+            <item>change css color from red to blue</item>
+        </change>
+    </changelog>
+    <changelog>
+        <element>kickytcd</element>
+        <type>plugin</type>
+        <version>0.0.0</version>
         <note>
             <item>first version</item>
         </note>
     </changelog>
 </changelogs>
+        <!--
+        <changelogs>
+            <changelog>
+                <element>com_lists</element>
+                <type>component</type>
+                <version>4.0.0</version>
+                <security>
+                    <item>Item A</item>
+                    <item><![CDATA[<h2>You MUST replace this file</h2>]]></item>
+                </security>
+                <fix>
+                    <item>Item A</item>
+                    <item>Item b</item>
+                </fix>
+                <language>
+                    <item>Item A</item>
+                    <item>Item b</item>
+                </language>
+                <addition>
+                    <item>Item A</item>
+                    <item>Item b</item>
+                </addition>
+                <change>
+                    <item>Item A</item>
+                    <item>Item b</item>
+                </change>
+                <remove>
+                    <item>Item A</item>
+                    <item>Item b</item>
+                </remove>
+                <note>
+                    <item>Item A</item>
+                    <item>Item b</item>
+                </note>
+        </changelog>-->
