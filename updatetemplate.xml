@@ -1,7 +1,7 @@
 <update>
   <name>System - Kick YOOtheme Plugin Demo</name>
   <description>Demo Plugin for the YOOtheme Community Day – Beyond Child Themes</description>
-  <element>kickyootcd</element>
+  <element>kickytcd</element>
   <type>plugin</type>
   <folder>system</folder>
   <client>site</client>
