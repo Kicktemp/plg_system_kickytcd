@@ -8,6 +8,31 @@
     <folder>system</folder>
     <client>site</client>
     <section>updates</section>
+    <version>0.0.2</version>
+    <changelogurl>https://raw.githubusercontent.com/Kicktemp/plg_system_kickytcd/main/changelog.xml</changelogurl>
+    <infourl title="KickKwadrat Plugin">https://github.com/Kicktemp/plg_system_kickytcd</infourl>
+    <downloads>
+      <downloadurl type="full" format="zip">https://github.com/Kicktemp/plg_system_kickytcd/releases/download/v0.0.2/plg_system_kickytcd_0.0.2.zip</downloadurl>
+    </downloads>
+    <sha256>7d6f34c466f2cbf42dbffebef4311abc8d99d8be1b688849c2f0461538e94cbe</sha256>
+    <sha384>c1b76f9a6b9ccb83a4fffb67fda01d7dc73b1d0d4b727ab644efc70e3c50505f7ffe29eb166ec4af830bf73fcc03abb8</sha384>
+    <sha512>ca42ee209358550f7c00931c5018ea4e44d359f639d57c5a541be24f9007832b9e3d7ade0d62a73fd7d3831aef266531f3633da89af3af382e002ad8d2096dde</sha512>
+    <tags>
+      <tag>stable</tag>
+    </tags>
+    <maintainer>Kicktemp GmbH</maintainer>
+    <maintainerurl>https://kicktemp.com</maintainerurl>
+    <php_minimum>8.1</php_minimum>
+    <targetplatform name="joomla" version="5\.(0|1|2|3|4)|6\.(0|1|2|3|4)"></targetplatform>
+  </update>
+  <update>
+    <name>System - Kick YOOtheme Plugin Demo</name>
+    <description>Demo Plugin for the YOOtheme Community Day – Beyond Child Themes</description>
+    <element>kickytcd</element>
+    <type>plugin</type>
+    <folder>system</folder>
+    <client>site</client>
+    <section>updates</section>
     <version>0.0.1</version>
     <changelogurl>https://raw.githubusercontent.com/Kicktemp/plg_system_kickytcd/main/changelog.xml</changelogurl>
     <infourl title="KickKwadrat Plugin">https://github.com/Kicktemp/plg_system_kickytcd</infourl>
