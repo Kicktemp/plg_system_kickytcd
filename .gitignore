@@ -15,5 +15,5 @@
 /releasefiles
 /package
 /oldupdate.xml
-/.DS_Store
-/.claude
+.DS_Store
+.claude
