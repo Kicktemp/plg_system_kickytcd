@@ -1,6 +1,6 @@
 {
   "name": "plg_system_kickytcd",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "type": "module",
   "scripts": {
@@ -64,7 +64,7 @@
     "[AUTHOR_URL]": "https://kicktemp.com",
     "[PRODUCT_LINK_DE]": "https://kicktemp.com",
     "[PRODUCT_LINK_EN]": "https://kicktemp.com",
-    "[DATE]": "18.09.2025",
+    "[DATE]": "19.09.2025",
     "[PLUGINTYPE]": "system",
     "[STABILITY]": "stable"
   },
