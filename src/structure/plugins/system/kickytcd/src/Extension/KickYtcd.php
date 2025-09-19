@@ -11,7 +11,6 @@
 namespace Kicktemp\Plugin\System\KickYtcd\Extension;
 
 use Joomla\CMS\Plugin\CMSPlugin;
-use Joomla\Event\SubscriberInterface;
 use YOOtheme\Application;
 use YOOtheme\Path;
 
@@ -19,51 +18,29 @@ use YOOtheme\Path;
 \defined('_JEXEC') or die;
 // phpcs:enable PSR1.Files.SideEffects
 
-final class KickYtcd extends CMSPlugin implements SubscriberInterface
+final class KickYtcd extends CMSPlugin
 {
-    /**
-     *
-     * @var array
-     */
     protected $modulus = [
         'Example'
     ];
 
-    /**
-     * Returns an array of events this subscriber will listen to.
-     *
-     * @return  array
-     *
-     * @since   4.0.0
-     */
-    public static function getSubscribedEvents(): array
-    {
-        return [
-            'onAfterInitialise' => 'initYOOtheme',
-        ];
-    }
-
-
-    public function initYOOtheme()
+    public function onAfterInitialise()
     {
         // Check if YOOtheme Pro is loaded
         if (!class_exists(Application::class, false)) {
             return;
         }
 
-        $app = Application::getInstance();
-
-        Path::setAlias('~kickytcd', JPATH_PLUGINS . '/system/kickytcd/src');
         $modules = [];
-
         foreach ($this->modulus as $addon) {
             if ($this->params->get(strtolower($addon), true)) {
                 $modules[] = $addon;
             }
         }
 
+        $app = Application::getInstance();
         foreach ($modules as $module) {
-            $app->load('~kickytcd/modules/{' . $module . '{,-joomla}}/bootstrap.php');
+            $app->load(JPATH_PLUGINS . '/system/kickytcd/src/modules/{' . $module . '{,-joomla}}/bootstrap.php');
         }
     }
 }
