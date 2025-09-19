@@ -1,7 +1,7 @@
 # Kick YOOtheme Plugin Demo
 
 This repository contains the **Kick YOOtheme Plugin Demo**, which was created for the **YOOtheme Community Day 2025**.  
-It was presented in the talk **“Beyond Child Themes”** by [Niels Nübel](https://www.linkedin.com/in/nielsnuebel/).
+It was presented in the talk **“Beyond Child Themes”** by [Niels Nübel](https://www.linkedin.com/in/niels-nuebel/).
 
 The plugin demonstrates how to extend **YOOtheme Pro** in Joomla with custom modules and features – going beyond simple child themes.
 
