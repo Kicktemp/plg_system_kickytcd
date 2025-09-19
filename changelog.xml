@@ -2,6 +2,14 @@
     <changelog>
         <element>kickytcd</element>
         <type>plugin</type>
+        <version>0.0.2</version>
+        <change>
+            <item>change css color from blue to red</item>
+        </change>
+    </changelog>
+    <changelog>
+        <element>kickytcd</element>
+        <type>plugin</type>
         <version>0.0.1</version>
         <change>
             <item>change css color from red to blue</item>
